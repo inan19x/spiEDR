@@ -7,22 +7,6 @@ Linux — bunnyedr_linux.py
 macOS — bunnyedr_macos.py
 Windows — bunnyedr_windows.py
 
-Structure
-spiEDR/
-├── src/
-│   ├── bunnyedr_linux.py
-│   ├── bunnyedr_macos.py
-│   └── bunnyedr_windows.py
-├── config/
-│   └── bunny.conf
-├── signatures/
-│   └── bunny-hash.txt
-├── logs/
-│   └── bunnyedr.log
-├── requirements_linux.txt
-├── requirements_macos.txt
-└── README.md
-
 Installation
 Linux
 python3 -m pip install -r requirements_linux.txt
