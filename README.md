@@ -1,35 +1,32 @@
-spiEDR
+# spiEDR
 
-spiEDR is a simple cross-platform EDR proof of concept that monitors files and detects known signatures using SHA-256 hashes.
+spiEDR is a simple cross-platform, playground-level EDR that monitors files and detects known signatures using SHA-256 hashes.
 
-Supported OS
-Linux — bunnyedr_linux.py
-macOS — bunnyedr_macos.py
-Windows — bunnyedr_windows.py
+## Supported OS:<br/>
+Linux — spiedr_linux.py<br/>
+macOS — spiedr_macos.py<br/>
+Windows — spiedr_windows.py<br/>
 
-Installation
-Linux
-python3 -m pip install -r requirements_linux.txt
+## Installation<br/>
+### Linux<br/>
+> python3 -m pip install -r requirements_linux.txt<br/><br/>
 
-macOS
-brew install fswatch
+### macOS<br/>
+> brew install fswatch<br/><br/>
 
-Windows
-No additional Python package is required.
+### Windows<br/>
+> No additional Python package is required.<br/><br/>
 
-Run
-Linux
-python3 src/bunnyedr_linux.py
+## Run<br/>
+### Linux<br/>
+> python3 src/spiedr_linux.py<br/><br/>
 
-macOS
-python3 src/bunnyedr_macos.py
+### macOS<br/>
+> python3 src/spiedr_macos.py<br/><br/>
 
-Windows
-python src\bunnyedr_windows.py
+### Windows<br/>
+> python src\spiedr_windows.py<br/><br/>
 
+spiEDR monitors the directory configured in spiedr.conf.<br/>
 
-spiEDR monitors the directory configured in bunny.conf.
-
-Matched signatures are written to: logs/bunnyedr.log
-
-Unmatched hashes are ignored.
+Matched signatures are written to: logs/spiedr.log
