@@ -362,6 +362,7 @@ class SpiEDR:
         )
 
         self.logger.info(message)
+        print(message, flush=True)
 
     def check_file(self, filepath):
         filepath = Path(filepath)
@@ -573,7 +574,7 @@ class SpiEDR:
 
 
 def main():
-    config_path = "config/bunny.conf"
+    config_path = "config/spiedr.conf"
 
     if len(sys.argv) > 1:
         config_path = sys.argv[1]

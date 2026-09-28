@@ -185,7 +185,10 @@ class SpiEDR:
 
         try:
             with filepath.open("rb") as f:
-                while chunk := f.read(1024 * 1024):
+                while True:
+                    chunk = f.read(1024 * 1024)
+                    if not chunk:
+                        break
                     hasher.update(chunk)
 
             return hasher.hexdigest().lower()
@@ -206,6 +209,7 @@ class SpiEDR:
         )
 
         self.logger.info(message)
+        print(message, flush=True)
 
     def check_file(self, filepath):
         filepath = Path(filepath)

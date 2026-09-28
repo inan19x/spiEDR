@@ -316,6 +316,7 @@ class SpiEDR:
         )
 
         self.logger.info(message)
+        print(message, flush=True)
 
     def check_file(self, filepath):
         filepath = Path(filepath).expanduser()
